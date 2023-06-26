@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Normalize -->
+   <link rel="stylesheet" href="css/normalize.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <!-- Title -->
+  <title>Ingridients</title>
+
+</head>
+
+<body>
+  <!-- Section Ingridients -->
+  <section class="ingridients" id="top">
+    <menu>
+      <div class="container-fluid">
+        <button 
+        class="btn-opn-canvas" 
+        type="button" 
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" 
+        aria-controls="offcanvasNavbar" 
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
+        </button>
+        <div 
+        class="offcanvas offcanvas-start" 
+        id="offcanvasNavbar" 
+        aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <button 
+                type="button" 
+                class="btn-close" 
+                data-bs-dismiss="offcanvas" 
+                aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link  link-dark" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" href="ingridient.html">Search by ingrident</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" href="name.html">Search by name</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" href="random.html">You may like...</a>
+                    </li>
+       
+                </ul>
+            </div>
+        </div>
+      </div>
+    </menu>
+    <!-- Ingridients-header -->
+    <header class="header ingridients__header">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div>
+            <h2>Search coctail by ingridient</h2>
+            <p>You have a lime at home ? so ... its time for fun</p>
+          </div>
+          <form class="header__form ingridents__form ">
+            <div>
+              <input id="search-ingridient"
+              type="search" 
+              class="search-input" 
+              placeholder="Lime">
+              <select id="select-alckohol" class="btn-select">
+                <option value="Alcoholic">Alckoholic</option>
+                <option value="Non_Alcoholic">Non Alckoholic</option>
+              </select>
+            </div>
+            <button type="search" id="submit-ingridient" class="btn btn-dark mt-3">
+              <span>Search</span>
+              <span><i class="fa-solid fa-magnifying-glass fa-fade"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- Ingridients-cards -->
+    <main class="cards ingridents__cards mt-4 ">
+      <div class="container-fluid">
+        <div class="general__content row gap-3 text-center justify-content-center">
+          <!-- data -->
+          <div class="card justify-content-around" style="width: 18rem;">
+            <div class="card__img">
+              <img 
+              class="img-fluid" 
+              src="img/earlygray-marteani.jpg" 
+              alt="Earl Grey Marteani"
+              data-bs-toggle="modal"
+              data-bs-target="#recipeModal-8"
+              >
+            </div>
+            <div class="card__info mt-2">
+              <h3 class="card__name">Earl Grey Marteani</h3>
+              <div class="card__buttons">
+                <button 
+                type="button" 
+                class="modal-btn mb-2" 
+                data-bs-toggle="modal" 
+                data-bs-target="#recipeModal-8">
+                <span>Watch recipe...</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal fade" id="recipeModal-8" tabindex="-1" aria-labelledby="recipeModalLabel-8"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg text-dark">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="recipeModalLabel-8">Earl Grey Marteani</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img 
+                    src="img/earlygray-marteani.jpg" 
+                    class="mb-3 img-fluid" 
+                    alt="Earl Grey Marteani">
+                    <div class=" text-start">
+                      <h6>Ingredients:</h6>
+                      <ul>
+                        <li>*1/2 ounces Earl Grey tea-infused gin</li>
+                        <li>3/4 ounce lemon juice, freshly squeezed</li>
+                        <li>1 ounce simple syrup</li>
+                        <li>1 egg white</li>
+                        <li> Garnish: sugar rim</li>
+                        <li>Garnish: lemon twist</li>
+                      </ul>
+                      <p>
+                        Use sugar to half-rim a coupe glass and set aside.
+                        Add the tea-infused gin, lemon juice, simple syrup and egg white into a shaker without ice and
+                        dry-shake vigorously (at least 10 seconds).
+                        Add ice and shake again until well-chilled.
+                        Strain into the prepared coupe.
+                        Garnish with a lemon twist.
+                      </p>
+                      <p>
+                        *Earl Grey tea-infused gin: Add 1/4 cup Earl Grey tea leaves into a 750 mL bottle of
+                        Tanqueray gin (or other high-proof dry gin), cap and shake. Let sit at room temperature for at
+                        least
+                        2 hours and up to 8 hours. Strain the infused gin through a coffee filter into a separate
+                        container.
+                        Rinse bottle to remove loose tea, and pour gin back into clean bottle.
+                        Can be stored indefinitely if refrigerated.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      <span>Close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card justify-content-around" style="width: 18rem;">
+            <div class="card__img">
+              <img 
+              class="img-fluid" 
+              src="img/tomato_spritz.jpg" 
+              alt="Tomato Spritz"
+              data-bs-toggle="modal"
+              data-bs-target="#recipeModal-9"
+              >
+            </div>
+            <div class="card__info mt-2">
+              <h3 class="card__name">Tomato Spritz</h3>
+              <div class="card__buttons">
+                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal" data-bs-target="#recipeModal-9">
+                  <span>Watch recipe...</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal fade" id="recipeModal-9" tabindex="-1" aria-labelledby="recipeModalLabel-9"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg text-dark">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="recipeModalLabel-9">Tomato Spritz</h5>
+                    <button 
+                    type="button" 
+                    class="btn-close" 
+                    data-bs-dismiss="modal" 
+                    aria-label="Close">
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img 
+                    src="img/tomato_spritz.jpg" 
+                    class="mb-3 img-fluid" 
+                    alt="Tomato Spritz">
+                    <div class=" text-start">
+                      <h6>Ingredients:</h6>
+                      <ul>
+                        <li>1/4 ounce Hendricks gin</li>
+                        <li>2 ounces Martini & Rossi extra-dry vermouth</li>
+                        <li>1 1/2 ounces tomato water*</li>
+                        <li>1/4 ounce cherry tomato shrub**</li>
+                        <li>Club soda, chilled, to top</li>
+                        <li>Prosecco, chilled, to top</li>
+                        <li>Garnish: cherry tomato, halved</li>
+                        <li>Garnish: parsley stalk</li>
+                      </ul>
+                      <p>
+                        Add all ingredients except club soda and prosecco into a Collins glass filled with ice and
+                        stir to combine.
+                        Top with equal parts club soda and prosecco, and stir again briefly and gently to combine.
+                        Garnish with a halved cherry tomato and a parsley stalk.
+                      </p>
+                      <p>
+                        *Tomato water: Add 1 container Holland or plum tomatoes into a juicer and mash them.
+                        Allow the mixture of tomato juices and skins to sit, refrigerated, for 30 minutes to an hour,
+                        in order for the juices to pick up the aroma from the skins. Add the mashed tomatoes into a
+                        strainer
+                        and allow to drip into a container until all the juice is collected. Keep the juice
+                        refrigerated and
+                        use within a few days for the best flavor.
+                      </p>
+                      <p>
+                        **Cherry tomato shrub: Add 3/4 cup halved cherry tomatoes, 3/4 cup white granulated sugar,
+                        3.5 ounces white wine vinegar, 3 ounces dry rosé wine and 3/4 ounce raspberry vinegar into
+                        a saucepan and cook over low heat until the sugar has dissolved and the cherry tomatoes are
+                        soft, about 15 minutes. Remove from heat and place in an ice bath to cool. Once chilled,
+                        pour the mixture into a blender and puree. Fine-strain into a sealable container and dispose
+                        of any solids. Will keep, refrigerated, for up to a week.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    data-bs-dismiss="modal">
+                    <span>Close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card justify-content-around" style="width: 18rem;">
+            <div class="card__img">
+              <img 
+              class="img-fluid" 
+              src="img/kiss.jpg" 
+              alt="Kiss"
+              data-bs-toggle="modal"
+              data-bs-target="#recipeModal-10"
+              >
+            </div>
+            <div class="card__info mt-2">
+              <h3 class="card__name">Kiss</h3>
+              <div class="card__buttons">
+                <button 
+                type="button" 
+                class="modal-btn mb-2" 
+                data-bs-toggle="modal" 
+                data-bs-target="#recipeModal-10">
+                <span>Watch recipe...</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal fade" id="recipeModal-10" tabindex="-1" aria-labelledby="recipeModalLabel-10"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg text-dark">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 
+                    class="modal-title" 
+                    id="recipeModalLabel-10">
+                    Kiss
+                    </h5>
+                    <button 
+                    type="button" 
+                    class="btn-close" 
+                    data-bs-dismiss="modal" 
+                    aria-label="Close">
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img 
+                    src="img/kiss.jpg" 
+                    class="mb-3 img-fluid" 
+                    alt="Kiss">
+                    <div class="text-start">
+                      <h6>Ingredients:</h6>
+                      <ul>
+                        <li> 2 ounces gin</li>
+                        <li>3/4 ounce Dubonnet rouge</li>
+                        <li>3/4 ounce sweet vermouth</li>
+                        <li>1/4 ounce Luxardo maraschino liqueur</li>
+                        <li>Garnish: apple slice fan*</li>
+                      </ul>
+                      <p>
+                        Add the gin, Dubonnet Rouge, sweet vermouth and maraschino liqueur to a mixing glass with ice
+                        and stir until well-chilled.
+                        Strain into a cocktail glass.
+                        Garnish with an apple slice fan.
+                      </p>
+                      <p>
+                        *Apple slice fan: Stand an apple upright, and cut a chunk from the side, being careful to
+                        avoid the core and seeds. Lie the apple chunk with its cut face down, then halve it so that
+                        the apple flesh is exposed. Cut four thin slices from the exposed side. Place the apple pieces
+                        together, pierce them with a cocktail pick about one third of the way from the bottom.
+                        Then fan them out and place in your drink, resting the cocktail pick on the rim of the glass.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      <span>Close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card justify-content-around" style="width: 18rem;">
+            <div class="card__img">
+              <img 
+              class="img-fluid" 
+              src="img/dirty-martini.jpg" 
+              alt="Dry Martini"
+              data-bs-toggle="modal"
+              data-bs-target="#recipeModal-11"
+              >
+            </div>
+            <div class="card__info mt-2">
+              <h3 class="card__name">Dry Martini</h3>
+              <div class="card__buttons">
+                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal" data-bs-target="#recipeModal-11">
+                  <span>Watch recipe...</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal fade" id="recipeModal-11" tabindex="-1" aria-labelledby="recipeModalLabel-11"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg text-dark">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 
+                    class="modal-title" 
+                    id="recipeModalLabel-11">
+                    Dry Martini
+                    </h5>
+                    <button 
+                    type="button" 
+                    class="btn-close" 
+                    data-bs-dismiss="modal" 
+                    aria-label="Close">
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img 
+                    src="img/dirty-martini.jpg" 
+                    class="mb-3 img-fluid" 
+                    alt="Dry Martini">
+                    <div class=" text-start">
+                      <h6>Ingredients:</h6>
+                      <ul>
+                        <li>2 1/2 ounces gin</li>
+                        <li>1/2 ounce dry vermouth</li>
+                        <li>1 dash orange bitters</li>
+                        <li>Garnish: lemon twist</li>
+                      </ul>
+                      <p>
+                        Add the gin, dry vermouth, and orange bitters into a mixing glass with ice and stir until very
+                        cold.
+                        Strain into a chilled cocktail glass.
+                        Garnish with a lemon twist.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    data-bs-dismiss="modal">
+                    <span>Close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message text-center">
+          <h4>Oops, I didn't find drinks.</h4>
+          <h5 class="mt-2">Try again</h5>
+          <div>
+            <img 
+            src="img/broked-glassl.png" 
+            class="img-fluid" 
+            style="max-width: 200px;" 
+            alt="broked-glass">
+          </div>
+          <button 
+          class="btn-sm btn-dark btn-reload mt-2">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <span>Refresh</span>
+          </button>
+        </div>
+        <div class="spinner mt-3">
+          <div class="spinner-grow text-dark">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-warning">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 999;">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto text-dark text-uppercase">Well done!</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-dark text-light">
+              <p>Now choose one of your favorite ingridinet and find out what drink you can make!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-dark btn-back-to-top" id="btn-scroll-to-top">
+        <a 
+        href="#top" 
+        class="link-light">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+        </a>
+      </button>
+    </main>
+  </section>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous">
+  </script>
+  <!-- Font-awesome -->
+  <script src="https://kit.fontawesome.com/daa964ccc3.js" 
+  crossorigin="anonymous"></script>
+  <!-- Js -->
+  <script type="module" src="js/ingridient.js"></script>
+
+</body>
+
+</html>

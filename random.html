@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Title -->
+    <title>You may like</title>
+
+</head>
+
+<body>
+    <!-- Section Randome Coctail -->
+    <section class="random">
+        <menu>
+            <div class="container-fluid">
+                <button class="btn-opn-canvas" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
+                </button>
+                <div class="offcanvas offcanvas-start" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav flex-column text-uppercase">
+                            <li class="nav-item">
+                                <a class="nav-link  link-dark" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark" href="ingridient.html">Search by ingrident</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark" href="name.html">Search by name</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark" href="random.html">You may like...</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </menu>
+        <!-- section-header -->
+        <header class="random__header text-dark">
+            <div class="container-fluid">
+                <h2 class="text-end">Drink for you!</h2>
+            </div>
+        </header>
+        <!-- cards -->
+        <main class="random__cards cards mt-3 ">
+            <div class="container-fluid">
+                <div class="general__content row gap-3 text-center justify-content-center">
+                    <!-- data -->
+                    <div class="card card-random justify-content-between" style="width: 18rem;">
+                        <div class="card__img">
+                            <img class="img-fluid" src="img/blue-lagoon.jpg" alt="Blue Lagoon" data-bs-toggle="modal"
+                                data-bs-target="#recipeModal-5">
+                        </div>
+                        <div class="card__info mt-2">
+                            <h3 class="card__name">Blue Lagoon</h3>
+                            <div class="card__buttons">
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-5">
+                                    <span>Watch recipe...</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="recipeModal-5" tabindex="-5" aria-labelledby="recipeModalLabel-5"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg text-dark">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="recipeModalLabel-5">
+                                            Blue Lagoon
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/blue-lagoon.jpg" class="mb-3 img-fluid" alt="Blue Lagoon">
+                                        <div class="text-start">
+                                            <h6>Ingredients:</h6>
+                                            <ul>
+                                                <li>1 ounce vodka</li>
+                                                <li>1 ounce blue curaçao</li>
+                                                <li>4 ounces lemonade</li>
+                                                <li>Garnish: lemon wheel</li>
+                                                <li>Garnish: maraschino cherry</li>
+                                            </ul>
+                                            <p>
+                                                Add the vodka, blue curaçao and lemonade to a shaker with
+                                                ice and shake until well-chilled.
+                                                Strain into a hurricane glass over crushed ice.
+                                                Garnish with a lemon wheel and maraschino cherry.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spinner mt-3">
+                <div class="spinner-grow text-dark">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 999;">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto text-dark text-uppercase">Lets see if you like this drink!</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/daa964ccc3.js" crossorigin="anonymous"></script>
+    <!-- Js -->
+    <script type="module" src="js/random.js"></script>
+
+</body>
+
+</html>
