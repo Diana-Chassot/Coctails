@@ -21,45 +21,50 @@
 <body>
     <!-- Section Randome Coctail -->
     <section class="random">
-        <menu>
-            <div class="container-fluid">
-                <button class="btn-opn-canvas" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
-                </button>
-                <div class="offcanvas offcanvas-start" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                        </button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="nav flex-column text-uppercase">
-                            <li class="nav-item">
-                                <a class="nav-link  link-dark" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-dark" href="ingridient.html">Search by ingrident</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-dark" href="name.html">Search by name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-dark" href="random.html">You may like...</a>
-                            </li>
 
-                        </ul>
-                    </div>
-                </div>
+        <div class="menu">
+            <button class="btn-opn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
             </div>
-        </menu>
+            <div class="offcanvas-body">
+                <ul class="flex-column text-uppercase">
+                    <li>
+                        <a class="nav-link link-dark" aria-current="page" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-dark" href="ingridient.html">
+                            Search by ingrident
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-dark" href="name.html">
+                            Search by name
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-dark" href="random.html">
+                            You may like...
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- section-header -->
-        <header class="random__header text-dark">
+        <header class="random__header">
             <div class="container-fluid">
-                <h2 class="text-end">Drink for you!</h2>
+                <h2 class="text-end text-dark">Drink for you!</h2>
             </div>
         </header>
         <!-- cards -->
-        <main class="random__cards cards mt-3 ">
+        <main class="cards mt-3 ">
             <div class="container-fluid">
                 <div class="general__content row gap-3 text-center justify-content-center">
                     <!-- data -->
@@ -77,16 +82,14 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-5" tabindex="-5" aria-labelledby="recipeModalLabel-5"
-                            aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-5" aria-labelledby="recipeModalLabel-5">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="recipeModalLabel-5">
                                             Blue Lagoon
                                         </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">

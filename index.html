@@ -1,113 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Normalize -->
-     <link rel="stylesheet" href="css/normalize.css">
-     <!-- Css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-    crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <title>Cocktails</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <title>Cocktails</title>
+</head>
 
-  <body>
-    <section class="home">
-      <menu>
+<body>
+  <section class="home">
+    <div class="menu">
+      <button class="btn-opn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
+      </button>
+    </div>
+    <div class="offcanvas offcanvas-start" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="flex-column text-uppercase">
+          <li>
+            <a class="nav-link link-dark" aria-current="page" href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="ingridient.html">
+              Search by ingrident
+            </a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="name.html">
+              Search by name
+            </a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="random.html">
+              You may like...
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main class="home__main">
+      <div class="home__title text-light">
         <div class="container-fluid">
-          <button 
-          class="btn-opn-canvas" 
-          type="button" 
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" 
-          aria-controls="offcanvasNavbar" 
-          aria-label="Toggle navigation">
-          <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
-          </button>
-          <div 
-          class="offcanvas offcanvas-start" 
-          id="offcanvasNavbar" 
-          aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                  <button 
-                  type="button" 
-                  class="btn-close" 
-                  data-bs-dismiss="offcanvas" 
-                  aria-label="Close">
-                  </button>
-              </div>
-              <div class="offcanvas-body">
-                  <ul class="nav flex-column text-uppercase">
-                      <li class="nav-item">
-                          <a class="nav-link  
-                          link-dark" 
-                          aria-current="page" 
-                          href="index.html">
-                          Home
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link link-dark" 
-                          href="ingridient.html">
-                          Search by ingrident
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link link-dark" 
-                          href="name.html">
-                          Search by name
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link link-dark" 
-                          href="random.html">
-                          You may like...
-                          </a>
-                      </li>
-                  </ul>
-              </div>
+        <h1 class="text-uppercase">Find your perfect cocktail</h1>
+        <h2 class="text-lowercase">Many recepts and more.....</h2>
+      </div>
+      </div>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto text-dark text-uppercase">Hi there!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+            </button>
+          </div>
+          <div class="toast-body bg-dark text-light">
+            To get started click on the glass of martini
           </div>
         </div>
-      </menu>  
-      <main class="home__main fw-bold text-light">
-        <div class="home__main--wrapper">
-          <div class="home__title text-end">
-            <h1 class="text-uppercase">Find your perfect cocktail</h1>
-            <h2 class="text-lowercase">Many recepts and more.....</h2>
-          </div>
-        </div>
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <strong class="me-auto text-dark text-uppercase">Hi there!</strong>
-              <button type="button" 
-              class="btn-close" 
-              data-bs-dismiss="toast" 
-              aria-label="Close">
-              </button>
-            </div>
-            <div class="toast-body bg-dark text-light">
-              To get started click on the glass of martini
-            </div>
-          </div>
-        </div>
-      </main>
-    </section>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous">
+      </div>
+    </main>
+  </section>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/daa964ccc3.js" crossorigin="anonymous"></script>
-    <!-- js -->
-    <script type="module" src="js/home.js"></script>
-  </body>
+  <!-- font-awesome -->
+  <script src="https://kit.fontawesome.com/daa964ccc3.js" crossorigin="anonymous"></script>
+  <!-- js -->
+  <script type="module" src="js/home.js"></script>
+</body>
+
 </html>

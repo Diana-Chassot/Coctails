@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Normalize -->
-     <link rel="stylesheet" href="css/normalize.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap -->
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- Title -->
@@ -23,70 +22,52 @@
 <body>
     <!-- Section Name -->
     <section class="name" id="top">
-        <menu>
-            <div class="container-fluid">
-              <button 
-              class="btn-opn-canvas" 
-              type="button" 
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar" 
-              aria-controls="offcanvasNavbar" 
-              aria-label="Toggle navigation">
-              <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
-              </button>
-              <div 
-              class="offcanvas offcanvas-start" 
-              id="offcanvasNavbar" 
-              aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header">
-                      <button 
-                      type="button" 
-                      class="btn-close" 
-                      data-bs-dismiss="offcanvas" 
-                      aria-label="Close">
-                      </button>
-                  </div>
-                  <div class="offcanvas-body">
-                      <ul class="nav flex-column text-uppercase">
-                          <li class="nav-item">
-                              <a class="nav-link  link-dark" aria-current="page" href="index.html">Home</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link link-dark" href="ingridient.html">Search by ingrident</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link link-dark" href="name.html">Search by name</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link link-dark" href="random.html">You may like...</a>
-                          </li>
-                 
-                      </ul>
-                  </div>
-              </div>
+        <div class="menu">
+            <button class="btn-opn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
             </div>
-        </menu>    
+            <div class="offcanvas-body">
+                <ul class="flex-column text-uppercase">
+                    <li>
+                        <a class="nav-link link-dark" aria-current="page" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-dark" href="ingridient.html">
+                            Search by ingrident
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-dark" href="name.html">
+                            Search by name
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-dark" href="random.html">
+                            You may like...
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- section-header -->
         <header class="name__header text-light">
             <div class="container-fluid">
-                <div class="name__header-content">
-                    <div>
-                        <h2>Find recept of your favorite drink!</h2>
-                    </div>
-                    <form class="header__form name__form">
-                        <input id="search-name" 
-                        type="search" 
-                        class="search-input text-dark" 
-                        placeholder="DAIQUIRI">
-
-                        <button id="submit-name"
-                        type="search" 
-                        class="btn mt-3">
+                <h2>Find recept of your favorite drink!</h2>
+                <form class="name__form">
+                    <input id="search-name" type="search" class="search-input text-dark" placeholder="DAIQUIRI">
+                    <button id="submit-name" type="submit" class="btn mt-3 btn-light">
                         <span>Search</span>
                         <span><i class="fa-solid fa-magnifying-glass fa-fade"></i></span>
-                        </button>
-                    </form>
-                </div>
+                    </button>
+                </form>
             </div>
         </header>
         <!-- cards -->
@@ -96,48 +77,29 @@
                     <!-- data -->
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img 
-                            class="img-fluid" 
-                            src="img/pina-colada.jpg" 
-                            alt="Piña Colada"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-1"
-                            >
+                            <img class="img-fluid" src="img/pina-colada.jpg" alt="Piña Colada" data-bs-toggle="modal"
+                                data-bs-target="#recipeModal-1">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Piña Colada</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-1">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-1">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-1" tabindex="-1" aria-labelledby="recipeModalLabel-1"
-                            aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-1" aria-labelledby="recipeModalLabel-1">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 
-                                        class="modal-title" 
-                                        id="recipeModalLabel-1">
-                                        Piña Colada
+                                        <h5 class="modal-title" id="recipeModalLabel-1">
+                                            Piña Colada
                                         </h5>
-                                        <button 
-                                        type="button" 
-                                        class="btn-close" 
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close">
-                                        </button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <img 
-                                        src="img/pina-colada.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Piña Colada">
+                                        <img src="img/pina-colada.jpg" class="mb-3 img-fluid" alt="Piña Colada">
                                         <div class=" text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -149,7 +111,7 @@
                                                 <li>Garnish: pineapple leaf</li>
                                             </ul>
                                             <p>
-                                                Add the rum, cream of coconut and pineapple and lime 
+                                                Add the rum, cream of coconut and pineapple and lime
                                                 juices to a shaker
                                                 with ice and shake vigorously for 20 to 30 seconds.
                                                 Strain into a chilled Hurricane glass over pebble ice.
@@ -158,11 +120,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button 
-                                        type="button" 
-                                        class="btn btn-secondary" 
-                                        data-bs-dismiss="modal">
-                                        <span>Close</span>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
                                         </button>
                                     </div>
                                 </div>
@@ -171,47 +130,30 @@
                     </div>
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img 
-                            class="img-fluid" 
-                            src="img/daikiri.jpg" 
-                            alt="Daiquiri"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-3"
-                            >
+                            <img class="img-fluid" src="img/daikiri.jpg" alt="Daiquiri" data-bs-toggle="modal"
+                                data-bs-target="#recipeModal-3">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Daiquiri</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-3">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-3">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-3" tabindex="-1" aria-labelledby="recipeModalLabel-3" aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-3" aria-labelledby="recipeModalLabel-3">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 
-                                        class="modal-title" 
-                                        id="recipeModalLabel-3">
-                                        Daiquiri
+                                        <h5 class="modal-title" id="recipeModalLabel-3">
+                                            Daiquiri
                                         </h5>
-                                        <button 
-                                        type="button" 
-                                        class="btn-close" 
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img 
-                                        src="img/daikiri.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Daiquiri">
+                                        <img src="img/daikiri.jpg" class="mb-3 img-fluid" alt="Daiquiri">
                                         <div class=" text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -220,7 +162,7 @@
                                                 <li>3/4 ounce demerara sugar syrup</li>
                                                 <li>Garnish: lime twist</li>
                                             </ul>
-                                            <p>Add the rum, lime juice and demerara sugar syrup 
+                                            <p>Add the rum, lime juice and demerara sugar syrup
                                                 to a shaker with ice,
                                                 and shake until well-chilled.
                                                 Strain into a chilled coupe.
@@ -239,45 +181,30 @@
                     </div>
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img 
-                            class="img-fluid" 
-                            src="img/cuba-libre.jpg" 
-                            alt="Cuba Libre"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-2"
-                            >
+                            <img class="img-fluid" src="img/cuba-libre.jpg" alt="Cuba Libre" data-bs-toggle="modal"
+                                data-bs-target="#recipeModal-2">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Cuba Libre</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-2">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-2">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-2" tabindex="-2" aria-labelledby="recipeModalLabel-2" aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-2" aria-labelledby="recipeModalLabel-2">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" 
-                                        id="recipeModalLabel-2">
-                                        Cuba Libre
+                                        <h5 class="modal-title" id="recipeModalLabel-2">
+                                            Cuba Libre
                                         </h5>
-                                        <button 
-                                        type="button" 
-                                        class="btn-close" 
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/cuba-libre.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Cuba Libre">
+                                        <img src="img/cuba-libre.jpg" class="mb-3 img-fluid" alt="Cuba Libre">
                                         <div class=" text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -295,11 +222,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button 
-                                        type="button" 
-                                        class="btn btn-secondary" 
-                                        data-bs-dismiss="modal">
-                                        <span>Close</span>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
                                         </button>
                                     </div>
                                 </div>
@@ -308,41 +232,28 @@
                     </div>
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img 
-                            class="img-fluid" 
-                            src="img/mojitto.jpg" 
-                            alt="Mojitoe"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-4"
-                            >
+                            <img class="img-fluid" src="img/mojitto.jpg" alt="Mojitoe" data-bs-toggle="modal"
+                                data-bs-target="#recipeModal-4">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Mojito</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-4">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-4">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-4" tabindex="-4" aria-labelledby="recipeModalLabel-4"
-                            aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-4" aria-labelledby="recipeModalLabel-4">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="recipeModalLabel-4">Mojito</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img 
-                                        src="img/mojitto.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Mojito">
+                                        <img src="img/mojitto.jpg" class="mb-3 img-fluid" alt="Mojito">
                                         <div class="text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -356,17 +267,14 @@
                                                 Muddle the lime juice, sugar and mint leaves in a small jug, crushing
                                                 the mint as you go you can use the end of a rolling pin for this. Pour
                                                 into a tall glass and add a handful of ice.
-                                                Pour over the rum, stirring with a long-handled spoon. 
+                                                Pour over the rum, stirring with a long-handled spoon.
                                                 Top up with soda water, garnish with mint and serve.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button 
-                                        type="button" 
-                                        class="btn btn-secondary" 
-                                        data-bs-dismiss="modal">
-                                        <span>Close</span>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
                                         </button>
                                     </div>
                                 </div>
@@ -375,46 +283,30 @@
                     </div>
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img class="img-fluid" 
-                            src="img/blue-lagoon.jpg" 
-                            alt="Blue Lagoon"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-5"
-                            >
+                            <img class="img-fluid" src="img/blue-lagoon.jpg" alt="Blue Lagoon" data-bs-toggle="modal"
+                                data-bs-target="#recipeModal-5">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Blue Lagoon</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-5">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-5">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-5" tabindex="-5" aria-labelledby="recipeModalLabel-5"aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-5" aria-labelledby="recipeModalLabel-5">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 
-                                        class="modal-title" 
-                                        id="recipeModalLabel-5">
-                                        Blue Lagoon
+                                        <h5 class="modal-title" id="recipeModalLabel-5">
+                                            Blue Lagoon
                                         </h5>
-                                        <button 
-                                        type="button" 
-                                        class="btn-close" 
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img 
-                                        src="img/blue-lagoon.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Blue Lagoon">
+                                        <img src="img/blue-lagoon.jpg" class="mb-3 img-fluid" alt="Blue Lagoon">
                                         <div class="text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -425,7 +317,7 @@
                                                 <li>Garnish: maraschino cherry</li>
                                             </ul>
                                             <p>
-                                                Add the vodka, blue curaçao and lemonade to a shaker with 
+                                                Add the vodka, blue curaçao and lemonade to a shaker with
                                                 ice and shake until well-chilled.
                                                 Strain into a hurricane glass over crushed ice.
                                                 Garnish with a lemon wheel and maraschino cherry.
@@ -433,11 +325,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button 
-                                        type="button" 
-                                        class="btn btn-secondary"
-                                        data-bs-dismiss="modal">
-                                        <span>Close</span>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
                                         </button>
                                     </div>
                                 </div>
@@ -446,48 +335,30 @@
                     </div>
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img 
-                            class="img-fluid" 
-                            src="img/tequila-sunrise.jpg" 
-                            alt="Tequila Sunrise"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-6"
-                            >
+                            <img class="img-fluid" src="img/tequila-sunrise.jpg" alt="Tequila Sunrise"
+                                data-bs-toggle="modal" data-bs-target="#recipeModal-6">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Tequila Sunrise</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-6">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-6">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-6" tabindex="-6" aria-labelledby="recipeModalLabel-6"
-                            aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-6" aria-labelledby="recipeModalLabel-6">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 
-                                        class="modal-title" 
-                                        id="recipeModalLabel-6">
-                                        Tequila Sunrise
+                                        <h5 class="modal-title" id="recipeModalLabel-6">
+                                            Tequila Sunrise
                                         </h5>
-                                        <button 
-                                        type="button" 
-                                        class="btn-close" 
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img 
-                                        src="img/tequila-sunrise.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Tequila Sunrise">
+                                        <img src="img/tequila-sunrise.jpg" class="mb-3 img-fluid" alt="Tequila Sunrise">
                                         <div class="text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -506,11 +377,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button 
-                                        type="button" 
-                                        class="btn btn-secondary" 
-                                        data-bs-dismiss="modal">
-                                        <span>Close</span>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
                                         </button>
                                     </div>
                                 </div>
@@ -519,47 +387,30 @@
                     </div>
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img 
-                            class="img-fluid" 
-                            src="img/margarritta.jpg" 
-                            alt="Margarita"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-7"
-                            >
+                            <img class="img-fluid" src="img/margarritta.jpg" alt="Margarita" data-bs-toggle="modal"
+                                data-bs-target="#recipeModal-7">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Margarita</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-7">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-7">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-7" tabindex="-7" aria-labelledby="recipeModalLabel-7" aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-7" aria-labelledby="recipeModalLabel-7">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 
-                                        class="modal-title" 
-                                        id="recipeModalLabel-7">
-                                        Margarita
+                                        <h5 class="modal-title" id="recipeModalLabel-7">
+                                            Margarita
                                         </h5>
-                                        <button 
-                                        type="button" 
-                                        class="btn-close" 
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img 
-                                        src="img/margarritta.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Margarita">
+                                        <img src="img/margarritta.jpg" class="mb-3 img-fluid" alt="Margarita">
                                         <div class="text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -580,11 +431,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button 
-                                        type="button" 
-                                        class="btn btn-secondary" 
-                                        data-bs-dismiss="modal">
-                                        <span>Close</span>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
                                         </button>
                                     </div>
                                 </div>
@@ -593,47 +441,30 @@
                     </div>
                     <div class="card justify-content-between" style="width: 18rem;">
                         <div class="card__img">
-                            <img 
-                            class="img-fluid" 
-                            src="img/campari-spritz.jpg" 
-                            alt="Campari Spritz"
-                            data-bs-toggle="modal"
-                            data-bs-target="#recipeModal-8"
-                            >
+                            <img class="img-fluid" src="img/campari-spritz.jpg" alt="Campari Spritz"
+                                data-bs-toggle="modal" data-bs-target="#recipeModal-8">
                         </div>
                         <div class="card__info mt-2">
                             <h3 class="card__name">Campari Spritz</h3>
                             <div class="card__buttons">
-                                <button 
-                                type="button" 
-                                class="modal-btn mb-2" 
-                                data-bs-toggle="modal"
-                                data-bs-target="#recipeModal-8">
-                                <span>Watch recipe...</span>
+                                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#recipeModal-8">
+                                    <span>Watch recipe...</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="modal fade" id="recipeModal-8" tabindex="-8" aria-labelledby="recipeModalLabel-8"aria-hidden="true">
+                        <div class="modal fade" id="recipeModal-8" aria-labelledby="recipeModalLabel-8">
                             <div class="modal-dialog modal-lg text-dark">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 
-                                        class="modal-title" 
-                                        id="recipeModalLabel-8">
-                                        Campari Spritz
+                                        <h5 class="modal-title" id="recipeModalLabel-8">
+                                            Campari Spritz
                                         </h5>
-                                        <button 
-                                        type="button" 
-                                        class="btn-close" 
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img 
-                                        src="img/campari-spritz.jpg" 
-                                        class="mb-3 img-fluid" 
-                                        alt="Campari Spritz">
+                                        <img src="img/campari-spritz.jpg" class="mb-3 img-fluid" alt="Campari Spritz">
                                         <div class="text-start">
                                             <h6>Ingredients:</h6>
                                             <ul>
@@ -651,11 +482,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button 
-                                        type="button" 
-                                        class="btn btn-secondary" 
-                                        data-bs-dismiss="modal">
-                                        <span>Close</span>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <span>Close</span>
                                         </button>
                                     </div>
                                 </div>
@@ -668,16 +496,11 @@
                 <h4>Oops, I didn't find drinks.</h4>
                 <h5 class="mt-2">Try again</h5>
                 <div>
-                    <img 
-                    src="img/broked-glassl.png" 
-                    class="img-fluid" 
-                    style="max-width: 200px;" 
-                    alt="broked-glass">
+                    <img src="img/broked-glassl.png" class="img-fluid" style="max-width: 200px;" alt="broked-glass">
                 </div>
-                <button 
-                class="btn-sm btn-dark btn-reload text-uppercase mt-2">
-                <i class="fa-solid fa-arrows-rotate"></i> 
-                Refresh
+                <button class="btn-sm btn-dark btn-reload text-uppercase mt-2">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    Refresh
                 </button>
             </div>
             <div class="spinner mt-3">
@@ -695,11 +518,7 @@
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
                         <strong class="me-auto text-dark text-uppercase">Well done!</strong>
-                        <button 
-                        type="button" 
-                        class="btn-close" 
-                        data-bs-dismiss="toast" 
-                        aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                     <div class="toast-body bg-dark text-light">
                         <p>Type name of your favorite drink and find recept!</p>
@@ -707,29 +526,22 @@
                 </div>
             </div>
             <button class="btn btn-dark btn-back-to-top" id="btn-scroll-to-top">
-                <a 
-                href="#top" 
-                class="link-light">
-                <i class="fa-solid fa-circle-arrow-up"></i>
+                <a href="#top" class="link-light">
+                    <i class="fa-solid fa-circle-arrow-up"></i>
                 </a>
             </button>
         </main>
     </section>
     <!-- Bootstrap -->
-    <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-    crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
     <!-- Font-awesome -->
-    <script 
-    src="https://kit.fontawesome.com/daa964ccc3.js" 
-    crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/daa964ccc3.js" crossorigin="anonymous">
     </script>
     <!-- Js -->
-    <script 
-    type="module" 
-    src="js/name.js">
+    <script type="module" src="js/name.js">
     </script>
 </body>
+
 </html>

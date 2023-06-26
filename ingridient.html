@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Normalize -->
-   <link rel="stylesheet" href="css/normalize.css">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Bootstrap -->
@@ -22,69 +22,58 @@
 <body>
   <!-- Section Ingridients -->
   <section class="ingridients" id="top">
-    <menu>
-      <div class="container-fluid">
-        <button 
-        class="btn-opn-canvas" 
-        type="button" 
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" 
-        aria-controls="offcanvasNavbar" 
-        aria-label="Toggle navigation">
+    <div class="menu">
+      <button class="btn-opn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
         <i class="fa-solid fa-martini-glass-citrus fa-beat"></i>
+      </button>
+    </div>
+    <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
         </button>
-        <div 
-        class="offcanvas offcanvas-start" 
-        id="offcanvasNavbar" 
-        aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <button 
-                type="button" 
-                class="btn-close" 
-                data-bs-dismiss="offcanvas" 
-                aria-label="Close">
-                </button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="nav flex-column text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link  link-dark" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-dark" href="ingridient.html">Search by ingrident</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-dark" href="name.html">Search by name</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-dark" href="random.html">You may like...</a>
-                    </li>
-       
-                </ul>
-            </div>
-        </div>
       </div>
-    </menu>
+      <div class="offcanvas-body">
+        <ul class="flex-column text-uppercase">
+          <li>
+            <a class="nav-link link-dark" aria-current="page" href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="ingridient.html">
+              Search by ingrident
+            </a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="name.html">
+              Search by name
+            </a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="random.html">
+              You may like...
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Ingridients-header -->
-    <header class="header ingridients__header">
+    <header class="header">
       <div class="container-fluid">
         <div class="row text-center">
           <div>
             <h2>Search coctail by ingridient</h2>
             <p>You have a lime at home ? so ... its time for fun</p>
           </div>
-          <form class="header__form ingridents__form ">
+          <form class="header__form">
             <div>
-              <input id="search-ingridient"
-              type="search" 
-              class="search-input" 
-              placeholder="Lime">
+              <input id="search-ingridient" type="search" class="search-input" placeholder="Lime">
               <select id="select-alckohol" class="btn-select">
                 <option value="Alcoholic">Alckoholic</option>
                 <option value="Non_Alcoholic">Non Alckoholic</option>
               </select>
             </div>
-            <button type="search" id="submit-ingridient" class="btn btn-dark mt-3">
+            <button type="submit" id="submit-ingridient" class="btn btn-dark mt-3">
               <span>Search</span>
               <span><i class="fa-solid fa-magnifying-glass fa-fade"></i></span>
             </button>
@@ -93,34 +82,24 @@
       </div>
     </header>
     <!-- Ingridients-cards -->
-    <main class="cards ingridents__cards mt-4 ">
+    <main class="cards mt-4">
       <div class="container-fluid">
         <div class="general__content row gap-3 text-center justify-content-center">
           <!-- data -->
           <div class="card justify-content-around" style="width: 18rem;">
             <div class="card__img">
-              <img 
-              class="img-fluid" 
-              src="img/earlygray-marteani.jpg" 
-              alt="Earl Grey Marteani"
-              data-bs-toggle="modal"
-              data-bs-target="#recipeModal-8"
-              >
+              <img class="img-fluid" src="img/earlygray-marteani.jpg" alt="Earl Grey Marteani" data-bs-toggle="modal"
+                data-bs-target="#recipeModal-8">
             </div>
             <div class="card__info mt-2">
               <h3 class="card__name">Earl Grey Marteani</h3>
               <div class="card__buttons">
-                <button 
-                type="button" 
-                class="modal-btn mb-2" 
-                data-bs-toggle="modal" 
-                data-bs-target="#recipeModal-8">
-                <span>Watch recipe...</span>
+                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal" data-bs-target="#recipeModal-8">
+                  <span>Watch recipe...</span>
                 </button>
               </div>
             </div>
-            <div class="modal fade" id="recipeModal-8" tabindex="-1" aria-labelledby="recipeModalLabel-8"
-              aria-hidden="true">
+            <div class="modal fade" id="recipeModal-8" aria-labelledby="recipeModalLabel-8">
               <div class="modal-dialog modal-lg text-dark">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -129,10 +108,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <img 
-                    src="img/earlygray-marteani.jpg" 
-                    class="mb-3 img-fluid" 
-                    alt="Earl Grey Marteani">
+                    <img src="img/earlygray-marteani.jpg" class="mb-3 img-fluid" alt="Earl Grey Marteani">
                     <div class=" text-start">
                       <h6>Ingredients:</h6>
                       <ul>
@@ -173,13 +149,8 @@
           </div>
           <div class="card justify-content-around" style="width: 18rem;">
             <div class="card__img">
-              <img 
-              class="img-fluid" 
-              src="img/tomato_spritz.jpg" 
-              alt="Tomato Spritz"
-              data-bs-toggle="modal"
-              data-bs-target="#recipeModal-9"
-              >
+              <img class="img-fluid" src="img/tomato_spritz.jpg" alt="Tomato Spritz" data-bs-toggle="modal"
+                data-bs-target="#recipeModal-9">
             </div>
             <div class="card__info mt-2">
               <h3 class="card__name">Tomato Spritz</h3>
@@ -189,24 +160,16 @@
                 </button>
               </div>
             </div>
-            <div class="modal fade" id="recipeModal-9" tabindex="-1" aria-labelledby="recipeModalLabel-9"
-              aria-hidden="true">
+            <div class="modal fade" id="recipeModal-9"  aria-labelledby="recipeModalLabel-9">
               <div class="modal-dialog modal-lg text-dark">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="recipeModalLabel-9">Tomato Spritz</h5>
-                    <button 
-                    type="button" 
-                    class="btn-close" 
-                    data-bs-dismiss="modal" 
-                    aria-label="Close">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     </button>
                   </div>
                   <div class="modal-body">
-                    <img 
-                    src="img/tomato_spritz.jpg" 
-                    class="mb-3 img-fluid" 
-                    alt="Tomato Spritz">
+                    <img src="img/tomato_spritz.jpg" class="mb-3 img-fluid" alt="Tomato Spritz">
                     <div class=" text-start">
                       <h6>Ingredients:</h6>
                       <ul>
@@ -245,11 +208,8 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button 
-                    type="button" 
-                    class="btn btn-secondary" 
-                    data-bs-dismiss="modal">
-                    <span>Close</span>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      <span>Close</span>
                     </button>
                   </div>
                 </div>
@@ -258,48 +218,29 @@
           </div>
           <div class="card justify-content-around" style="width: 18rem;">
             <div class="card__img">
-              <img 
-              class="img-fluid" 
-              src="img/kiss.jpg" 
-              alt="Kiss"
-              data-bs-toggle="modal"
-              data-bs-target="#recipeModal-10"
-              >
+              <img class="img-fluid" src="img/kiss.jpg" alt="Kiss" data-bs-toggle="modal"
+                data-bs-target="#recipeModal-10">
             </div>
             <div class="card__info mt-2">
               <h3 class="card__name">Kiss</h3>
               <div class="card__buttons">
-                <button 
-                type="button" 
-                class="modal-btn mb-2" 
-                data-bs-toggle="modal" 
-                data-bs-target="#recipeModal-10">
-                <span>Watch recipe...</span>
+                <button type="button" class="modal-btn mb-2" data-bs-toggle="modal" data-bs-target="#recipeModal-10">
+                  <span>Watch recipe...</span>
                 </button>
               </div>
             </div>
-            <div class="modal fade" id="recipeModal-10" tabindex="-1" aria-labelledby="recipeModalLabel-10"
-              aria-hidden="true">
+            <div class="modal fade" id="recipeModal-10" aria-labelledby="recipeModalLabel-10">
               <div class="modal-dialog modal-lg text-dark">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 
-                    class="modal-title" 
-                    id="recipeModalLabel-10">
-                    Kiss
+                    <h5 class="modal-title" id="recipeModalLabel-10">
+                      Kiss
                     </h5>
-                    <button 
-                    type="button" 
-                    class="btn-close" 
-                    data-bs-dismiss="modal" 
-                    aria-label="Close">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     </button>
                   </div>
                   <div class="modal-body">
-                    <img 
-                    src="img/kiss.jpg" 
-                    class="mb-3 img-fluid" 
-                    alt="Kiss">
+                    <img src="img/kiss.jpg" class="mb-3 img-fluid" alt="Kiss">
                     <div class="text-start">
                       <h6>Ingredients:</h6>
                       <ul>
@@ -335,13 +276,8 @@
           </div>
           <div class="card justify-content-around" style="width: 18rem;">
             <div class="card__img">
-              <img 
-              class="img-fluid" 
-              src="img/dirty-martini.jpg" 
-              alt="Dry Martini"
-              data-bs-toggle="modal"
-              data-bs-target="#recipeModal-11"
-              >
+              <img class="img-fluid" src="img/dirty-martini.jpg" alt="Dry Martini" data-bs-toggle="modal"
+                data-bs-target="#recipeModal-11">
             </div>
             <div class="card__info mt-2">
               <h3 class="card__name">Dry Martini</h3>
@@ -351,28 +287,18 @@
                 </button>
               </div>
             </div>
-            <div class="modal fade" id="recipeModal-11" tabindex="-1" aria-labelledby="recipeModalLabel-11"
-              aria-hidden="true">
+            <div class="modal fade" id="recipeModal-11" aria-labelledby="recipeModalLabel-11">
               <div class="modal-dialog modal-lg text-dark">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 
-                    class="modal-title" 
-                    id="recipeModalLabel-11">
-                    Dry Martini
+                    <h5 class="modal-title" id="recipeModalLabel-11">
+                      Dry Martini
                     </h5>
-                    <button 
-                    type="button" 
-                    class="btn-close" 
-                    data-bs-dismiss="modal" 
-                    aria-label="Close">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     </button>
                   </div>
                   <div class="modal-body">
-                    <img 
-                    src="img/dirty-martini.jpg" 
-                    class="mb-3 img-fluid" 
-                    alt="Dry Martini">
+                    <img src="img/dirty-martini.jpg" class="mb-3 img-fluid" alt="Dry Martini">
                     <div class=" text-start">
                       <h6>Ingredients:</h6>
                       <ul>
@@ -390,11 +316,8 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button 
-                    type="button" 
-                    class="btn btn-secondary" 
-                    data-bs-dismiss="modal">
-                    <span>Close</span>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      <span>Close</span>
                     </button>
                   </div>
                 </div>
@@ -406,16 +329,11 @@
           <h4>Oops, I didn't find drinks.</h4>
           <h5 class="mt-2">Try again</h5>
           <div>
-            <img 
-            src="img/broked-glassl.png" 
-            class="img-fluid" 
-            style="max-width: 200px;" 
-            alt="broked-glass">
+            <img src="img/broked-glassl.png" class="img-fluid" style="max-width: 200px;" alt="broked-glass">
           </div>
-          <button 
-          class="btn-sm btn-dark btn-reload mt-2">
-          <i class="fa-solid fa-arrows-rotate"></i>
-          <span>Refresh</span>
+          <button class="btn-sm btn-dark btn-reload mt-2">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <span>Refresh</span>
           </button>
         </div>
         <div class="spinner mt-3">
@@ -442,22 +360,18 @@
         </div>
       </div>
       <button class="btn btn-dark btn-back-to-top" id="btn-scroll-to-top">
-        <a 
-        href="#top" 
-        class="link-light">
-        <i class="fa-solid fa-circle-arrow-up"></i>
+        <a href="#top" class="link-light">
+          <i class="fa-solid fa-circle-arrow-up"></i>
         </a>
       </button>
     </main>
   </section>
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-  crossorigin="anonymous">
-  </script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
   <!-- Font-awesome -->
-  <script src="https://kit.fontawesome.com/daa964ccc3.js" 
-  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/daa964ccc3.js" crossorigin="anonymous"></script>
   <!-- Js -->
   <script type="module" src="js/ingridient.js"></script>
 
