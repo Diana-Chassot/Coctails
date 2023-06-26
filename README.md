@@ -2,14 +2,14 @@
 
 ### Diana Chassot
 
-Coctails app project is a responsive web application that allows you to explore and discover various cocktail recipes. This project focuses on fetching data using AJAX requests.
+Coctails app project is a responsive web application that allows to explore and discover various cocktail recipes. This project focuses on fetching data using AJAX requests and practice with Bootrstrap.
 The application utilizes a free API server provided by TheCocktailDB, which gives access to a wide range of cocktails to choose from.
 
 #### Technologies used in the project:
 * HTML;
 * CSS;
 * JavaScript;
-* Bootstrap (for responsive design)
+* Bootstrap
 
 ## Features
 * Cocktail Search: Users can search for cocktails by their name or ingredient. Additionally, they can use filters to search for alcoholic or non-alcoholic cocktails.
