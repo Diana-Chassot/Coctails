@@ -5,7 +5,7 @@ h4,
 h5 {
   text-transform: uppercase;
 }
-html{
+html {
   height: 100%;
 }
 body {
@@ -15,12 +15,16 @@ body {
 option {
   outline: none;
 }
-.menu{
- padding: 10px 25px;
+.menu {
+  top: 0;
+  padding: 10px 25px;
+  position: absolute;
+  background-color: white;
+  width: 100%;
 }
 /* Home */
-.home{
-  height: 90%;
+.home {
+  height: 100%;
 }
 .home__main {
   background-image: url("../img/cock3.jfif");
@@ -39,7 +43,9 @@ option {
 }
 
 /* Ingridients */
-
+.ingridients{
+  margin-top: 56px;
+}
 .ingridients #select-alckohol,
 .ingridients .search-input {
   background-color: transparent;
@@ -57,37 +63,35 @@ option {
 .ingridients #select-alckohol {
   letter-spacing: 2px;
   box-shadow: 1px 2px 3px #00000047;
-
 }
 
 /* Name */
-
+.name{
+  margin-top: 56px;
+}
 .name__header {
-  background-image: url("../img/cock7.jfif"),url("../img/cock8.jfif");
+  background-image: url("../img/cock7.jfif"), url("../img/cock8.jfif");
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: left,  right 30%;;
+  background-position: left, right 30%;
   padding: 10px;
 }
-.name__header h2{
-
+.name__header h2 {
   background-color: #f1bfa8;
-    text-align: center;
-    font-weight: 800;
-    color: #ffffff;
-    padding: 20px;
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 20px;
 }
 .name__form {
   display: flex;
   flex-direction: column;
-
 }
 #search-name {
   border-radius: none;
 }
 #submit-name {
   align-self: center;
-  
 }
 /* random */
 .random {
@@ -97,12 +101,16 @@ option {
   background-position: left center, right center;
   background-repeat: no-repeat;
   height: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.random__header{  background-color: #ffffffc4;}
+.random__header {
+  background-color: #ffffffc4;
+}
 
 .card-random {
-  display: none ;
+  display: none;
 }
 
 .btn-opn-canvas {
@@ -172,7 +180,7 @@ option {
   opacity: 0.4;
   z-index: 999;
 }
-#btn-scroll-to-top a{
+#btn-scroll-to-top a {
   padding: 30px;
 }
 #btn-scroll-to-top:hover {
@@ -194,7 +202,7 @@ option {
   .name__header {
     background-size: cover;
   }
-  .btn-opn-canvas{
+  .btn-opn-canvas {
     font-size: 24px;
-  } 
+  }
 }
